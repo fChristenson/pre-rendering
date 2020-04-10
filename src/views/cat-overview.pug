@@ -1,0 +1,7 @@
+html
+  body
+    ul
+      each cat in cats
+        li
+          a(href=`/cats/${cat.name}`)
+            img(src=`/images/${cat.fileName}`, style="max-width: 280px;")
